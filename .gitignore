@@ -1,3 +1,4 @@
 venv/*
 test_friendly_office.py
 __pycache__/*
+brudnopis.py
