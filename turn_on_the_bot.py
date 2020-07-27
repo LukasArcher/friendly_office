@@ -6,7 +6,7 @@ class TurnOnTheBot:
     def __init__(self):
         self.my_office = Office()
         self.sleep = 2
-        self.secret_password = "i hate this office"
+        self.secret_password = "friendly_office"
 
     def turn_on_the_bot(self):
         if self.my_office.bot == 'a':
@@ -35,7 +35,7 @@ class TurnOnTheBot:
         elif self.my_office.bot == 'exit':
             pass
         else:
-            print("\n\n\n\nHey, What's wrong with you dude? Are you illiterate or what?\n\n\n\n")
+            print("\n\n\n\nHey, this is a wrong command, try again!\n\n\n\n")
             sleep(self.sleep)
 
         while self.my_office.bot != 'exit':
@@ -73,7 +73,7 @@ and then you gonna get your ticket: """).lower()
             elif self.my_office.bot == 'exit':
                 pass
             else:
-                print("\n\n\n\nWTF are you doing dude!? Are you fucking stupid?! READ CAREFULLY AND TRY AGAIN:\n\n\n\n")
+                print("\n\n\n\nHey, this is a wrong command, try again!:\n\n\n\n")
                 sleep(self.sleep)
 
         else:
@@ -95,7 +95,7 @@ and then you gonna get your ticket: """).lower()
 
     def secret_mode(self):
         while True:
-            secret = input("""\n\n\n\nDude! You're in the secret mode now! Awesome!
+            secret = input("""\n\n\n\nYou're in the secret mode now! Awesome!
 Type A, B or C according on which applicant you want to call out
 or type "exit" if you want to close the secret mode: """).lower()
 
@@ -112,9 +112,9 @@ or type "exit" if you want to close the secret mode: """).lower()
                 sleep(self.sleep)
                 break
             elif secret == 'exit':
-                print("\n\n\n\nPfff, whatever...closing secret mode.\n\n\n\n")
+                print("\n\n\n\nClosing secret mode.\n\n\n\n")
                 sleep(self.sleep)
                 break
             else:
-                print("\n\n\n\nYou fucked it up...FFS, don't mess up with me!\n\n\n\n")
+                print("\n\n\n\nHey, this is a wrong command, try again!\n\n\n\n")
                 sleep(self.sleep)
